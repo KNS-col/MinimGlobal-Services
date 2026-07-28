@@ -11,6 +11,7 @@ import { isStudiosPublicPath } from '@/data/studios'
 import { isFoodPublicPath } from '@/data/food'
 import { isArchitectPublicPath } from '@/data/architect'
 import { isClothingPublicPath } from '@/data/clothing'
+import { isMusicPublicPath } from '@/data/music'
 
 const BUSINESS_HEADER = 'x-business-slug'
 
@@ -84,7 +85,8 @@ export function middleware(request: NextRequest) {
           slug === 'studios' ||
           slug === 'food' ||
           slug === 'architect' ||
-          slug === 'clothing'
+          slug === 'clothing' ||
+          slug === 'music'
         const destPath =
           multiPage
             ? rest === '/' || rest === ''
@@ -129,6 +131,17 @@ export function middleware(request: NextRequest) {
           rest !== '/' &&
           rest !== '' &&
           !isClothingPublicPath(rest)
+        ) {
+          return NextResponse.redirect(
+            new URL('/', divisionOrigin(biz.subdomain, request)),
+            308
+          )
+        }
+        if (
+          slug === 'music' &&
+          rest !== '/' &&
+          rest !== '' &&
+          !isMusicPublicPath(rest)
         ) {
           return NextResponse.redirect(
             new URL('/', divisionOrigin(biz.subdomain, request)),
@@ -233,6 +246,27 @@ export function middleware(request: NextRequest) {
       pathname === '/'
         ? '/businesses/clothing'
         : `/businesses/clothing${pathname}`
+    return withBusinessHeader(request, business.slug, rewritePath)
+  }
+
+  // Music subdomain — multi-page music services site
+  if (business.slug === 'music') {
+    if (pathname.startsWith('/businesses/music')) {
+      const rest = pathname.replace(/^\/businesses\/music/, '') || '/'
+      const clean = rest === '' ? '/' : rest
+      return NextResponse.redirect(new URL(clean, request.url), 308)
+    }
+
+    if (pathname.startsWith('/businesses')) {
+      return NextResponse.redirect(new URL('/', request.url), 308)
+    }
+
+    if (!isMusicPublicPath(pathname)) {
+      return NextResponse.redirect(new URL('/', request.url), 308)
+    }
+
+    const rewritePath =
+      pathname === '/' ? '/businesses/music' : `/businesses/music${pathname}`
     return withBusinessHeader(request, business.slug, rewritePath)
   }
 

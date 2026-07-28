@@ -32,8 +32,8 @@ export default function ClothingServicesPage() {
               <div>
                 <h2>{service.title}</h2>
                 <p>{service.description}</p>
-                <a href="/businesses/clothing/shop" className="mc-btn mc-btn-dark">
-                  Shop Online
+                <a href="/businesses/clothing/contact" className="mc-btn mc-btn-dark">
+                  Request a Quote
                 </a>
               </div>
             </article>

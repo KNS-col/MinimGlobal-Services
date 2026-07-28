@@ -1,4 +1,4 @@
-import ArchitectShell from '@/components/ArchitectShell'
+import ArchitectShell from '@/components/architect/ArchitectShell'
 
 export default function ArchitectLayout({
   children,

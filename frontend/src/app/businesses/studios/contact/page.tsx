@@ -1,5 +1,5 @@
-﻿import StudiosPageHero from '@/components/StudiosPageHero'
-import BookingForm from '@/components/BookingForm'
+﻿import StudiosPageHero from '@/components/studios/StudiosPageHero'
+import BookingForm from '@/components/studios/BookingForm'
 
 export default function ContactPage() {
   return (

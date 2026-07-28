@@ -444,6 +444,8 @@ export const ARCHITECT_PUBLIC_PATHS = [
   '/services',
   '/contact',
   '/expenditure',
+  '/privacy',
+  '/terms',
 ] as const
 
 export function getArchitectServiceBySlug(slug: string): ArchitectService | undefined {

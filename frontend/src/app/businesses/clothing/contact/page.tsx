@@ -1,4 +1,4 @@
-import ClothingOrderForm from '@/components/ClothingOrderForm'
+import ClothingOrderForm from '@/components/clothing/ClothingOrderForm'
 
 export default function ClothingContactPage() {
   return (
@@ -12,14 +12,9 @@ export default function ClothingContactPage() {
           <p className="mc-eyebrow">Customer Care</p>
           <h1>Contact Us</h1>
           <p>
-            Shop online from any collection, or send a message if you need help
-            with sizes, branding, or delivery.
+            Send a message if you need help with sizes, branding, bulk pricing,
+            or delivery.
           </p>
-          <div className="mc-hero-actions">
-            <a href="/businesses/clothing/shop" className="mc-btn mc-btn-primary">
-              Shop Online
-            </a>
-          </div>
         </div>
       </section>
 
@@ -28,8 +23,8 @@ export default function ClothingContactPage() {
           <div>
             <h2>Need help?</h2>
             <p>
-              Prefer to buy immediately? Use Add to cart on any product page.
-              For custom branding or large programme questions, message us here.
+              For custom branding, bulk orders, or large programme questions,
+              message us here and we will follow up with pricing and timelines.
             </p>
             <ul className="mc-contact-details">
               <li>
@@ -38,10 +33,10 @@ export default function ClothingContactPage() {
               </li>
               <li>
                 <strong>Email</strong>
-                <a href="mailto:info@minimglobal.com">wardrobe@minimglobal.com</a>
+                <a href="mailto:info@minimglobal.com">info@minimglobal.com</a>
               </li>
               <li>
-                <strong>Shop</strong>
+                <strong>Location</strong>
                 <span>Freetown, Sierra Leone</span>
               </li>
             </ul>

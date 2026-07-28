@@ -1,4 +1,4 @@
-export type BusinessSlug = 'studios' | 'food' | 'architect' | 'clothing'
+export type BusinessSlug = 'studios' | 'food' | 'architect' | 'clothing' | 'music'
 
 export type BusinessNavLink = {
   href: string
@@ -13,7 +13,7 @@ export type Business = {
   navLinks: BusinessNavLink[]
 }
 
-/** DNS: point studios/food/architect/clothing (or *) at the same host as the apex site. */
+/** DNS: point studios/food/architect/clothing/music (or *) at the same host as the apex site. */
 export const businesses: Business[] = [
   {
     slug: 'studios',
@@ -38,7 +38,6 @@ export const businesses: Business[] = [
     navLinks: [
       { href: '/', label: 'Home' },
       { href: '/catering', label: 'Catering' },
-      { href: '/shop', label: 'Shop' },
       { href: '/team', label: 'Team' },
       { href: '/contact', label: 'Contact' },
     ],
@@ -63,8 +62,21 @@ export const businesses: Business[] = [
     path: '/businesses/clothing',
     navLinks: [
       { href: '/', label: 'Home' },
-      { href: '/shop', label: 'Shop' },
       { href: '/services', label: 'Services' },
+      { href: '/team', label: 'Team' },
+      { href: '/contact', label: 'Contact' },
+    ],
+  },
+  {
+    slug: 'music',
+    subdomain: 'music',
+    name: 'Minim Music',
+    path: '/businesses/music',
+    navLinks: [
+      { href: '/', label: 'Home' },
+      { href: '/services', label: 'Services' },
+      { href: '/artists', label: 'Artists' },
+      { href: '/instruments', label: 'Instruments' },
       { href: '/team', label: 'Team' },
       { href: '/contact', label: 'Contact' },
     ],

@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import ArchitectServicePage from '@/components/ArchitectServicePage'
+import ArchitectServicePage from '@/components/architect/ArchitectServicePage'
 import { ARCHITECT_SERVICES, getArchitectServiceBySlug } from '@/data/architect'
 
 type Props = {

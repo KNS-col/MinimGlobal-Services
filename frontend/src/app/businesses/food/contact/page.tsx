@@ -27,10 +27,10 @@ export default function FoodContactPage() {
         <div className="mf-hero-overlay" />
         <div className="mf-page-hero-content">
           <p className="mf-eyebrow">Contact Us</p>
-          <h1>Catering quotes &amp; product orders</h1>
+          <h1>Book catering for your event</h1>
           <p>
-            Ask about catering for your event or support for an online product
-            order.
+            Share your date, guest count, and style. We will prepare a catering
+            quote and confirm your booking.
           </p>
         </div>
       </section>
@@ -49,8 +49,8 @@ export default function FoodContactPage() {
                 <a href="tel:033883388">033 88 33 88</a>
               </li>
               <li>
-                <strong>Orders</strong>
-                <a href="mailto:info@minimglobal.com">orders@minimglobal.com</a>
+                <strong>Bookings</strong>
+                <a href="mailto:info@minimglobal.com">info@minimglobal.com</a>
               </li>
               <li>
                 <strong>Email</strong>

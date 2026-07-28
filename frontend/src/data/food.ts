@@ -196,7 +196,6 @@ export const foodProducts: FoodProduct[] = [
 export const FOOD_NAV = [
   { href: '/', label: 'Home' },
   { href: '/catering', label: 'Catering' },
-  { href: '/shop', label: 'Shop' },
   { href: '/team', label: 'Team' },
   { href: '/contact', label: 'Contact' },
 ] as const
@@ -204,9 +203,10 @@ export const FOOD_NAV = [
 export const FOOD_PUBLIC_PATHS = [
   '/',
   '/catering',
-  '/shop',
   '/team',
   '/contact',
+  '/privacy',
+  '/terms',
 ] as const
 
 export function formatLeones(amount: number) {

@@ -1,4 +1,4 @@
-import StudiosShell from '@/components/StudiosShell'
+import StudiosShell from '@/components/studios/StudiosShell'
 
 export default function StudiosLayout({
   children,

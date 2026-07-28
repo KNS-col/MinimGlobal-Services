@@ -6,10 +6,10 @@ const team = [
     bio: 'Leads menu planning and production for weddings, corporate events, and private dining.',
   },
   {
-    name: 'Orders Coordinator',
-    role: 'Online Shop & Delivery',
-    initials: 'OC',
-    bio: 'Confirms product orders, packaging, and delivery windows for online shoppers.',
+    name: 'Bookings Coordinator',
+    role: 'Event Bookings',
+    initials: 'BC',
+    bio: 'Confirms catering bookings, guest counts, menus, and delivery windows for each event.',
   },
   {
     name: 'Event Supervisor',
@@ -28,9 +28,8 @@ export default function FoodTeamPage() {
       >
         <div className="mf-hero-overlay" />
         <div className="mf-page-hero-content">
-          <p className="mf-eyebrow">Meet the Team</p>
-          <h1>Catering &amp; shop staff</h1>
-          <p>The people behind your events and online orders.</p>
+          <h1>Our catering team</h1>
+          <p>The people behind your events and bookings.</p>
         </div>
       </section>
 

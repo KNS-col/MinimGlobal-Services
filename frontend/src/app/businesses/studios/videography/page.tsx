@@ -1,4 +1,4 @@
-import StudiosPageHero from '@/components/StudiosPageHero'
+import StudiosPageHero from '@/components/studios/StudiosPageHero'
 import { ArrowRight } from 'lucide-react'
 
 const preProduction = [

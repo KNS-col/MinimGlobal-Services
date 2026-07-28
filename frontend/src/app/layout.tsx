@@ -1,9 +1,9 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import { ThemeProvider } from '@/components/ThemeProvider'
-import ReduxProvider from '@/components/ReduxProvider'
+import { ThemeProvider } from '@/components/shared/ThemeProvider'
+import ReduxProvider from '@/components/shared/ReduxProvider'
 import { Toaster } from 'react-hot-toast'
-import PageLoader from '@/components/PageLoader'
+import PageLoader from '@/components/shared/PageLoader'
 
 export const metadata: Metadata = {
   title: 'Home Minim Global Services',

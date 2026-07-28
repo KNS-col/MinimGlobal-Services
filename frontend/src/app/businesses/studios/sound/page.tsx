@@ -1,4 +1,4 @@
-import StudiosPageHero from '@/components/StudiosPageHero'
+import StudiosPageHero from '@/components/studios/StudiosPageHero'
 import {
   Mic,
   Speaker,
@@ -177,7 +177,7 @@ export default function SoundStudioPage() {
               return (
                 <article key={card.title} className="ms-service-card">
                   <div className="ms-service-icon">
-                    <Icon size={28} strokeWidth={1.4} />
+                    <Icon size={28} strokeWidth={1.75} />
                   </div>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>

@@ -19,8 +19,8 @@ export default function CateringPage() {
             <a href="/businesses/food/contact" className="mf-btn mf-btn-primary">
               Request a catering quote
             </a>
-            <a href="/businesses/food/shop" className="mf-btn mf-btn-ghost">
-              Shop ready to go trays
+            <a href="/businesses/food/contact" className="mf-btn mf-btn-ghost">
+              Book catering
             </a>
           </div>
         </div>

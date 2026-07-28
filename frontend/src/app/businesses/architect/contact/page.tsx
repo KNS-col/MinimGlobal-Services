@@ -1,5 +1,5 @@
-import ArchitectPageHero from '@/components/ArchitectPageHero'
-import ArchitectConsultForm from '@/components/ArchitectConsultForm'
+import ArchitectPageHero from '@/components/architect/ArchitectPageHero'
+import ArchitectConsultForm from '@/components/architect/ArchitectConsultForm'
 
 export default function ArchitectContactPage() {
   return (

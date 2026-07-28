@@ -1,4 +1,4 @@
-import StudiosPageHero from '@/components/StudiosPageHero'
+import StudiosPageHero from '@/components/studios/StudiosPageHero'
 import { studiosTeam } from '@/data/studios-team'
 
 export default function StudiosTeamPage() {

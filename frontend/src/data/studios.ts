@@ -63,6 +63,8 @@ export const STUDIOS_PUBLIC_PATHS = [
   '/design',
   '/team',
   '/contact',
+  '/privacy',
+  '/terms',
   // legacy
   '/headshots',
 ] as const

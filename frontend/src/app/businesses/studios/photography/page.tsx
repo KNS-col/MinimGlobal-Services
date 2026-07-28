@@ -1,4 +1,4 @@
-import StudiosPageHero from '@/components/StudiosPageHero'
+import StudiosPageHero from '@/components/studios/StudiosPageHero'
 import {
   Camera,
   Package,
@@ -188,7 +188,7 @@ export default function PhotographyPage() {
             />
             <div className="ms-photo-split-body">
               <div className="ms-photo-split-icon">
-                <Camera size={28} strokeWidth={1.4} />
+                <Camera size={28} strokeWidth={1.75} />
               </div>
               <h2>In Studio Sessions</h2>
               <p>
@@ -218,7 +218,7 @@ export default function PhotographyPage() {
             />
             <div className="ms-photo-split-body">
               <div className="ms-photo-split-icon">
-                <MapPin size={28} strokeWidth={1.4} />
+                <MapPin size={28} strokeWidth={1.75} />
               </div>
               <h2>On Location Sessions</h2>
               <p>
@@ -255,7 +255,7 @@ export default function PhotographyPage() {
               return (
                 <article key={card.title} className="ms-service-card">
                   <div className="ms-service-icon">
-                    <Icon size={28} strokeWidth={1.4} />
+                    <Icon size={28} strokeWidth={1.75} />
                   </div>
                   <h3>{card.title}</h3>
                   <p>{card.description}</p>

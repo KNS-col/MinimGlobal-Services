@@ -1,5 +1,5 @@
-import ArchitectPageHero from '@/components/ArchitectPageHero'
-import ArchitectServiceNav from '@/components/ArchitectServiceNav'
+import ArchitectPageHero from '@/components/architect/ArchitectPageHero'
+import ArchitectServiceNav from '@/components/architect/ArchitectServiceNav'
 import { ARCHITECT_SERVICES } from '@/data/architect'
 
 export default function ArchitectServicesIndexPage() {
@@ -17,7 +17,11 @@ export default function ArchitectServicesIndexPage() {
 
         <div className="ma-services-index">
           {ARCHITECT_SERVICES.map((service) => (
-            <a key={service.id} href={service.path} className="ma-services-index-card">
+            <a
+              key={service.id}
+              href={`/businesses/architect${service.path}`}
+              className="ma-services-index-card"
+            >
               <div
                 className="ma-services-index-image"
                 style={{ backgroundImage: `url('${service.heroImage}')` }}

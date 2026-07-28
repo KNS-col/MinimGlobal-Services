@@ -1,5 +1,5 @@
-import ArchitectPageHero from '@/components/ArchitectPageHero'
-import ExpenditureTracker from '@/components/ExpenditureTracker'
+import ArchitectPageHero from '@/components/architect/ArchitectPageHero'
+import ExpenditureTracker from '@/components/architect/ExpenditureTracker'
 
 export default function ArchitectExpenditurePage() {
   return (

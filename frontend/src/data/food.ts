@@ -26,7 +26,7 @@ export const cateringPackages: CateringPackage[] = [
       'Breakfasts, lunches, and refreshments for meetings, workshops, and office events.',
     guests: '10 to 200 guests',
     priceFrom: 150000,
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-food.jpg',
     includes: [
       'Menu planning with your team',
       'Delivery & setup',
@@ -41,7 +41,7 @@ export const cateringPackages: CateringPackage[] = [
       'Full catering for weddings, birthdays, and celebrations with Sierra Leonean and continental menus.',
     guests: '50 to 500 guests',
     priceFrom: 500000,
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-food.jpg',
     includes: [
       'Custom tasting menu',
       'Buffet or plated service',
@@ -56,7 +56,7 @@ export const cateringPackages: CateringPackage[] = [
       'Intimate catered meals for homes, VIP gatherings, and small celebrations.',
     guests: '5 to 40 guests',
     priceFrom: 250000,
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-food.jpg',
     includes: [
       'Chef led menu',
       'Delivery or on site cook',
@@ -71,7 +71,7 @@ export const cateringPackages: CateringPackage[] = [
       'Packed meals, BBQ, and picnic catering for outdoor events and staff days.',
     guests: '20 to 300 guests',
     priceFrom: 200000,
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-food.jpg',
     includes: [
       'Packed or buffet options',
       'Grill packages available',
@@ -90,7 +90,7 @@ export const foodProducts: FoodProduct[] = [
     price: 180000,
     unit: 'tray',
     category: 'meals',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'cassava-tray',
@@ -99,7 +99,7 @@ export const foodProducts: FoodProduct[] = [
     price: 160000,
     unit: 'tray',
     category: 'meals',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'grilled-chicken',
@@ -108,7 +108,7 @@ export const foodProducts: FoodProduct[] = [
     price: 220000,
     unit: 'platter',
     category: 'meals',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'fried-plantain',
@@ -117,7 +117,7 @@ export const foodProducts: FoodProduct[] = [
     price: 45000,
     unit: 'pack',
     category: 'meals',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'spice-mix',
@@ -126,7 +126,7 @@ export const foodProducts: FoodProduct[] = [
     price: 35000,
     unit: '500g',
     category: 'pantry',
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'palm-oil',
@@ -135,7 +135,7 @@ export const foodProducts: FoodProduct[] = [
     price: 55000,
     unit: '2L',
     category: 'pantry',
-    image: '/images/Hero-6.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'rice-bag',
@@ -144,7 +144,7 @@ export const foodProducts: FoodProduct[] = [
     price: 280000,
     unit: '25kg',
     category: 'pantry',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'stew-base',
@@ -153,7 +153,7 @@ export const foodProducts: FoodProduct[] = [
     price: 40000,
     unit: '1kg',
     category: 'pantry',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'sobolo',
@@ -162,7 +162,7 @@ export const foodProducts: FoodProduct[] = [
     price: 30000,
     unit: '2L',
     category: 'drinks',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'ginger-drink',
@@ -171,7 +171,7 @@ export const foodProducts: FoodProduct[] = [
     price: 28000,
     unit: '2L',
     category: 'drinks',
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'snack-pack',
@@ -180,7 +180,7 @@ export const foodProducts: FoodProduct[] = [
     price: 75000,
     unit: 'box',
     category: 'party',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-food.jpg',
   },
   {
     id: 'cutlery-pack',
@@ -189,7 +189,7 @@ export const foodProducts: FoodProduct[] = [
     price: 85000,
     unit: 'set of 50',
     category: 'equipment',
-    image: '/images/Hero-6.jpg',
+    image: '/images/minim-food.jpg',
   },
 ]
 

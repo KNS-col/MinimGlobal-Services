@@ -6,7 +6,7 @@
     fullName: 'Photography Studio',
     description:
       'Professional photo sessions for brands, products, events, and people in studio or on location.',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     slug: 'videography',
@@ -15,7 +15,7 @@
     fullName: 'Videography Studio',
     description:
       'Full service video production from concept to delivery: commercials, brand films, and events.',
-    image: '/images/Hero-6.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     slug: 'sound',
@@ -24,7 +24,7 @@
     fullName: 'Sound Studio',
     description:
       'Live sound reinforcement, studio recording, mixing, and sound design for events, podcasts, ads, and film.',
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minim-studio.jpg',
   },
   {
     slug: 'displays',
@@ -33,7 +33,7 @@
     fullName: 'Displays Studio',
     description:
       'Event lighting, LED walls, staging, and visual production that transforms venues and captivates audiences.',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     slug: 'design',
@@ -42,7 +42,7 @@
     fullName: 'Design Studio',
     description:
       'Creative design for brands, campaigns, packaging, and digital, concept through final artwork.',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-studio.jpg',
   },
 ] as const
 

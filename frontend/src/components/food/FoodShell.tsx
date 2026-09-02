@@ -47,8 +47,8 @@ export default function FoodShell({ children }: { children: React.ReactNode }) {
         <div className="mf-nav-inner">
           <a href={href('/')} className="mf-nav-logo" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/images/logo.png"
-              alt="Minim Food"
+              src="/images/Logo.png"
+              alt="Minim Foods"
               width={140}
               height={40}
               className="object-contain"
@@ -125,7 +125,7 @@ export default function FoodShell({ children }: { children: React.ReactNode }) {
         <div className="mf-footer-bottom">
           <div className="mf-container footer-bottom-row">
             <p>
-              &copy; {new Date().getFullYear()} Minim Food. All rights reserved.
+              &copy; {new Date().getFullYear()} Minim Foods. All rights reserved.
             </p>
             <div className="legal-links">
               <a href={href('/privacy')}>Privacy Policy</a>

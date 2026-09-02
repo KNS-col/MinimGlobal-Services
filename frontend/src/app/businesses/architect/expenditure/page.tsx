@@ -8,7 +8,7 @@ export default function ArchitectExpenditurePage() {
         eyebrow="Project Transparency"
         title="Track Your Expenditure"
         subtitle="We track all expenditure prior to work done with precision, ensuring transparency in your construction project."
-        image="/images/Hero-6.jpg"
+        image="/images/minin-architect.jpg"
         ctaHref="/businesses/architect/contact"
         ctaLabel="Discuss Your Project"
       />

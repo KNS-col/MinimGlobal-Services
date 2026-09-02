@@ -9,7 +9,7 @@ export default function ArchitectTermsPage() {
         eyebrow="Legal"
         title="Terms of Service"
         subtitle="The terms that govern your use of the Minim Global Services website."
-        image="/images/Hero-6.jpg"
+        image="/images/minin-architect.jpg"
       />
       <section className="legal-page">
         <div className="ma-container">

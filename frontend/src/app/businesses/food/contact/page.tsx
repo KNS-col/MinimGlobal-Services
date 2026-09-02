@@ -22,7 +22,7 @@ export default function FoodContactPage() {
     <>
       <section
         className="mf-page-hero"
-        style={{ backgroundImage: "url('/images/Hero-3.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-food.jpg')" }}
       >
         <div className="mf-hero-overlay" />
         <div className="mf-page-hero-content">
@@ -49,11 +49,7 @@ export default function FoodContactPage() {
                 <a href="tel:033883388">033 88 33 88</a>
               </li>
               <li>
-                <strong>Bookings</strong>
-                <a href="mailto:info@minimglobal.com">info@minimglobal.com</a>
-              </li>
-              <li>
-                <strong>Email</strong>
+                <strong>Bookings &amp; Email</strong>
                 <a href="mailto:info@minimglobal.com">info@minimglobal.com</a>
               </li>
             </ul>
@@ -63,6 +59,7 @@ export default function FoodContactPage() {
             <label>
               Full Name
               <input
+                name="name"
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -71,6 +68,7 @@ export default function FoodContactPage() {
             <label>
               Email
               <input
+                name="email"
                 type="email"
                 required
                 value={form.email}
@@ -80,6 +78,7 @@ export default function FoodContactPage() {
             <label>
               Phone
               <input
+                name="phone"
                 required
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
@@ -88,6 +87,7 @@ export default function FoodContactPage() {
             <label>
               Company / Venue
               <input
+                name="company"
                 value={form.company}
                 onChange={(e) => setForm({ ...form, company: e.target.value })}
               />
@@ -95,6 +95,7 @@ export default function FoodContactPage() {
             <label>
               Message
               <textarea
+                name="message"
                 rows={5}
                 required
                 value={form.message}

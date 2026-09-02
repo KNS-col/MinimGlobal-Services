@@ -87,7 +87,8 @@ export default function SoundStudioPage() {
         eyebrow="Sound Studio"
         title="Audio & Sound Reinforcement"
         subtitle="Crystal clear sound for live events, conferences, and studio productions. Every word, note, and effect heard with precision."
-        image="/images/Hero-2.jpeg"
+        image="/images/minim-sound2.jpeg"
+        imagePosition="center 55%"
         ctaLabel="Get a Quote"
       />
 

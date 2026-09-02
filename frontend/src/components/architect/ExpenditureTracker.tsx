@@ -26,14 +26,6 @@ export default function ExpenditureTracker() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="section-title">Track Your Expenditure</h2>
-          <p className="section-subtitle">
-            We Track all Expenditure Prior to Workdone with precision, ensuring
-            Transparency in your construction Project.
-          </p>
-        </div>
-
         <form onSubmit={handleSubmit} className="card p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
@@ -41,6 +33,7 @@ export default function ExpenditureTracker() {
                 Project Name *
               </label>
               <input
+                name="projectName"
                 type="text"
                 required
                 value={formData.projectName}
@@ -54,6 +47,7 @@ export default function ExpenditureTracker() {
                 Expense Name *
               </label>
               <input
+                name="expenseName"
                 type="text"
                 required
                 value={formData.expenseName}
@@ -70,6 +64,7 @@ export default function ExpenditureTracker() {
                 Amount (Le) *
               </label>
               <input
+                name="amount"
                 type="number"
                 required
                 value={formData.amount}
@@ -83,6 +78,7 @@ export default function ExpenditureTracker() {
                 Category *
               </label>
               <select
+                name="category"
                 required
                 value={formData.category}
                 onChange={(e) => setFormData({ ...formData, category: e.target.value })}
@@ -101,6 +97,7 @@ export default function ExpenditureTracker() {
                 Date *
               </label>
               <input
+                name="date"
                 type="date"
                 required
                 value={formData.date}

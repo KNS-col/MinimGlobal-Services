@@ -48,8 +48,8 @@ export default function ArchitectShell({ children }: { children: React.ReactNode
         <div className="ma-nav-inner">
           <a href={href('/')} className="ma-nav-logo" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/images/logo.png"
-              alt="Minim Architect"
+              src="/images/Logo.png"
+              alt="Minim Architects, Designers & Engineers"
               width={140}
               height={40}
               className="object-contain"
@@ -118,7 +118,7 @@ export default function ArchitectShell({ children }: { children: React.ReactNode
         </div>
         <div className="ma-footer-bottom">
           <div className="ma-container footer-bottom-row">
-            <p>&copy; {new Date().getFullYear()} Minim Architect. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Minim Architects, Designers & Engineers. All rights reserved.</p>
             <div className="legal-links">
               <a href={href('/privacy')}>Privacy Policy</a>
               <a href={href('/terms')}>Terms of Service</a>

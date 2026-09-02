@@ -34,6 +34,7 @@ export default function ClothingOrderForm() {
         <label>
           Full Name *
           <input
+            name="name"
             type="text"
             required
             value={formData.name}
@@ -44,6 +45,7 @@ export default function ClothingOrderForm() {
         <label>
           Email *
           <input
+            name="email"
             type="email"
             required
             value={formData.email}
@@ -56,6 +58,7 @@ export default function ClothingOrderForm() {
         <label>
           Phone Number *
           <input
+            name="phone"
             type="tel"
             required
             value={formData.phone}
@@ -66,6 +69,7 @@ export default function ClothingOrderForm() {
         <label>
           Delivery Address *
           <input
+            name="address"
             type="text"
             required
             value={formData.address}
@@ -78,6 +82,7 @@ export default function ClothingOrderForm() {
         <label>
           Items to Order *
           <textarea
+            name="items"
             rows={3}
             required
             value={formData.items}
@@ -88,6 +93,7 @@ export default function ClothingOrderForm() {
         <label>
           Sizes *
           <textarea
+            name="sizes"
             rows={3}
             required
             value={formData.sizes}
@@ -99,6 +105,7 @@ export default function ClothingOrderForm() {
       <label>
         Special Requests
         <textarea
+          name="specialRequests"
           rows={3}
           value={formData.specialRequests}
           onChange={(e) =>

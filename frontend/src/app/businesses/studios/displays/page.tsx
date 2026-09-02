@@ -87,7 +87,8 @@ export default function DisplaysStudioPage() {
         eyebrow="Displays Studio"
         title="Lighting, LED & Event Displays"
         subtitle="Event lighting, lighting design, LED walls, projection, and staging technology and talent that make your audience feel the moment."
-        image="/images/Hero-4.jpg"
+        image="/images/minim-sound1.jpeg"
+        imagePosition="center 70%"
         ctaLabel="Get a Quote"
       />
 

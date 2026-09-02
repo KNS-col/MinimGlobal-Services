@@ -7,10 +7,11 @@ export default function MinimArchitectHome() {
   return (
     <>
       <ArchitectPageHero
-        eyebrow="Minim Architect · Freetown"
+        eyebrow="Minim Architects, Designers & Engineers · Freetown"
         title="Full Service Architecture Firm: Design Services and Project Management"
         subtitle="From pre-purchase evaluation through construction closeout, we guide residential and commercial projects across Sierra Leone."
-        image="/images/Hero-4.jpg"
+        image="/images/minim-architect1.jpeg"
+        imagePosition="center 45%"
       />
 
       <section className="ma-intro">
@@ -29,7 +30,7 @@ export default function MinimArchitectHome() {
           </div>
           <div
             className="ma-intro-photo"
-            style={{ backgroundImage: "url('/images/Hero-5.jpg')" }}
+            style={{ backgroundImage: "url('/images/minin-architect.jpg')" }}
             role="img"
             aria-label="Architectural project in Freetown"
           />

@@ -33,7 +33,7 @@ export default function ArchitectPortfolioGallery() {
         eyebrow="Selected Works"
         title="Portfolio"
         subtitle="Residential, commercial, and institutional projects across Freetown and Sierra Leone."
-        image="/images/Hero-3.jpg"
+        image="/images/minin-architect.jpg"
         ctaHref="/businesses/architect/contact"
         ctaLabel="Start a Project"
       />

@@ -5,12 +5,12 @@ export default function ClothingTeamPage() {
     <>
       <section
         className="mc-page-hero"
-        style={{ backgroundImage: "url('/images/Hero-5.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-clothing.jpg')" }}
       >
         <div className="mc-hero-overlay" />
         <div className="mc-page-hero-content">
           <p className="mc-eyebrow">Meet the Team</p>
-          <h1>The people behind Minim Clothing</h1>
+          <h1>The people behind Minim Clothings</h1>
           <p>
             Design, wholesale, uniforms, and tailoring specialists serving teams
             and families across Freetown.

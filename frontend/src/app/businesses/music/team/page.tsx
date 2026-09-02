@@ -8,7 +8,7 @@ export default function MusicTeamPage() {
         eyebrow="Meet the Team"
         title="The people behind Minim Music"
         subtitle="Production, management, instruments, and booking specialists supporting artists and stages across Freetown."
-        image="/images/Hero-4.jpg"
+        image="/images/minim-music.jpg"
         ctaHref="/businesses/music/contact"
         ctaLabel="Work with us"
         secondaryHref="/businesses/music/services"

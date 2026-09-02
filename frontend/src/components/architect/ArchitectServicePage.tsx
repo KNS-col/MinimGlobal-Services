@@ -90,7 +90,7 @@ export default function ArchitectServicePage({ service }: Props) {
           <div className="ma-service-cta">
             <h2>Ready to discuss this phase of your project?</h2>
             <p>
-              Speak with Minim Architect about scope, timeline, and how full service
+              Speak with Minim Architects, Designers & Engineers about scope, timeline, and how full service
               delivery can support your build.
             </p>
             <a href="/businesses/architect/contact" className="ma-btn ma-btn-primary">

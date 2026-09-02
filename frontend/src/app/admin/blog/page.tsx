@@ -8,7 +8,7 @@ export default function AdminBlog() {
   const posts = [
     { id: 1, title: 'Minim Global Services Launches New Website', category: 'News', status: 'Published', date: '2026-01-15' },
     { id: 2, title: 'Upcoming Events at Minim Studios', category: 'Events', status: 'Published', date: '2026-01-10' },
-    { id: 3, title: 'New Menu Items at Minim Food', category: 'Food', status: 'Draft', date: '2026-01-05' },
+    { id: 3, title: 'New Menu Items at Minim Foods', category: 'Food', status: 'Draft', date: '2026-01-05' },
   ]
 
   const filteredPosts = posts.filter(post =>

@@ -9,7 +9,7 @@ export default function PageHero({
   eyebrow,
   title,
   subtitle,
-  image = '/images/Hero-6.jpg',
+  image = '/images/minimglobal-hero.jpg',
 }: PageHeroProps) {
   return (
     <section className="ahs-hero" style={{ backgroundImage: `url('${image}')` }}>

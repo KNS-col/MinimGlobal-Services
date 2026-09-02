@@ -6,7 +6,7 @@ export default function MinimFoodHome() {
     <>
       <section
         className="mf-hero"
-        style={{ backgroundImage: "url('/images/Hero-3.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-food.jpg')" }}
       >
         <div className="mf-hero-overlay" />
         <div className="mf-hero-content">
@@ -32,7 +32,7 @@ export default function MinimFoodHome() {
           <article className="mf-split-card">
             <h2>Events, offices &amp; celebrations</h2>
             <p>
-              From corporate lunches to weddings, Minim Food plans the menu,
+              From corporate lunches to weddings, Minim Foods plans the menu,
               prepares the food, and delivers on time with optional on-site
               service.
             </p>

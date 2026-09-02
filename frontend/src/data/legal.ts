@@ -9,7 +9,7 @@ export const PRIVACY_SECTIONS: LegalSection[] = [
   {
     title: 'Introduction',
     body: [
-      'Minim Global Services ("Minim Global", "we", "us", or "our") operates this website and its divisions, including Minim Studios, Minim Food, Minim Architect, Minim Clothing, and Minim Music. This Privacy Policy explains what information we collect, how we use it, and the choices you have.',
+      'Minim Global Services ("Minim Global", "we", "us", or "our") operates this website and its divisions, including Minim Studios, Minim Foods, Minim Architects, Designers & Engineers, Minim Clothings, and Minim Music. This Privacy Policy explains what information we collect, how we use it, and the choices you have.',
       'By using our website or contacting any of our divisions, you agree to the collection and use of information as described in this policy.',
     ],
   },
@@ -70,7 +70,7 @@ export const TERMS_SECTIONS: LegalSection[] = [
   {
     title: 'Acceptance of Terms',
     body: [
-      'These Terms of Service govern your use of the Minim Global Services website and the sites of its divisions: Minim Studios, Minim Food, Minim Architect, Minim Clothing, and Minim Music. By accessing or using our website, you agree to these terms.',
+      'These Terms of Service govern your use of the Minim Global Services website and the sites of its divisions: Minim Studios, Minim Foods, Minim Architects, Designers & Engineers, Minim Clothings, and Minim Music. By accessing or using our website, you agree to these terms.',
     ],
   },
   {

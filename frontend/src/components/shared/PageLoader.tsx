@@ -31,7 +31,14 @@ export default function PageLoader() {
     return () => window.clearTimeout(t)
   }, [pathname])
 
-  if (!visible && !navigating) return null
+  const showing = visible || navigating
+
+  useEffect(() => {
+    document.body.classList.toggle('loader-open', showing)
+    return () => document.body.classList.remove('loader-open')
+  }, [showing])
+
+  if (!showing) return null
 
   return (
     <div className={`mg-loader-overlay ${navigating && !visible ? 'is-route' : ''}`}>

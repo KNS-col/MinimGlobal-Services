@@ -8,7 +8,7 @@ export default function MusicArtistsPage() {
         eyebrow="Artist roster"
         title="Artists we manage and book"
         subtitle="From jazz leaders to featured vocalists — talent ready for residencies, festivals, and private stages."
-        image="/images/Hero-6.jpg"
+        image="/images/minim-music.jpg"
         ctaHref="/businesses/music/contact"
         ctaLabel="Book an artist"
         secondaryHref="/businesses/music/services/management"

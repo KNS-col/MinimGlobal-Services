@@ -50,12 +50,12 @@ export const ARCHITECT_INTRO =
   'There are many types of architectural firms, and the services they provide can vary significantly. A full service architecture firm provides both design and technical expertise, guiding a project from the earliest planning stages through construction and completion.'
 
 const IMAGES = {
-  h1: '/images/Hero-1.jpg',
-  h2: '/images/Hero-2.jpeg',
-  h3: '/images/Hero-3.jpg',
-  h4: '/images/Hero-4.jpg',
-  h5: '/images/Hero-5.jpg',
-  h6: '/images/Hero-6.jpg',
+  h1: '/images/minin-architect.jpg',
+  h2: '/images/minin-architect.jpg',
+  h3: '/images/minin-architect.jpg',
+  h4: '/images/minin-architect.jpg',
+  h5: '/images/minin-architect.jpg',
+  h6: '/images/minin-architect.jpg',
 } as const
 
 export const ARCHITECT_SERVICES: ArchitectService[] = [
@@ -197,7 +197,7 @@ export const ARCHITECT_SERVICES: ArchitectService[] = [
     heroImage: IMAGES.h2,
     paragraphs: [
       'Many full service architecture firms also provide interior architecture and interior design services. This creates a more cohesive relationship between the architecture and interiors of the home or building.',
-      'At Minim Architect, we provide interior design services as part of our architectural process. Integrating architecture and interior design within one cohesive process allows us to maintain continuity throughout the project, from the overall architectural concept down to interior details.',
+      'At Minim Architects, Designers & Engineers, we provide interior design services as part of our architectural process. Integrating architecture and interior design within one cohesive process allows us to maintain continuity throughout the project, from the overall architectural concept down to interior details.',
       'Our design process involves coordination and refinement throughout every stage of the project. We work closely with fabricators and suppliers to develop custom samples, finishes, and details before fabrication begins.',
     ],
     bullets: [
@@ -229,7 +229,7 @@ export const ARCHITECT_SERVICES: ArchitectService[] = [
     paragraphs: [
       'Most architectural projects require engineering consultants, including structural, mechanical, electrical, plumbing, and civil engineers, along with specialty consultants when needed.',
       'Project teams can be structured in different ways. Sometimes the client hires consultants directly, while in other cases the architect coordinates the consultants as part of the architectural services.',
-      'At Minim Architect, we often coordinate engineering consultants directly to maintain continuity throughout the project. When comparing architectural proposals, it is important to understand which consultant services are included and how the project team will be managed.',
+      'At Minim Architects, Designers & Engineers, we often coordinate engineering consultants directly to maintain continuity throughout the project. When comparing architectural proposals, it is important to understand which consultant services are included and how the project team will be managed.',
     ],
     bullets: [
       'Structural engineers',
@@ -359,10 +359,10 @@ export const ARCHITECT_SERVICES: ArchitectService[] = [
     heroImage: IMAGES.h1,
     paragraphs: [
       'A full service architecture firm provides continuity from concept through construction completion. Integrating design, technical documentation, consultant coordination, permitting, and construction administration within one architectural practice creates a more coordinated and efficient process for complex residential and commercial projects.',
-      'At Minim Architect, we approach architecture as a fully integrated process that combines design, technical expertise, and construction coordination to deliver high quality projects throughout Freetown and Sierra Leone.',
+      'At Minim Architects, Designers & Engineers, we approach architecture as a fully integrated process that combines design, technical expertise, and construction coordination to deliver high quality projects throughout Freetown and Sierra Leone.',
     ],
     images: [
-      { src: IMAGES.h4, alt: 'Completed Minim Architect project exterior' },
+      { src: IMAGES.h4, alt: 'Completed Minim Architects, Designers & Engineers project exterior' },
       { src: IMAGES.h2, alt: 'Integrated design and construction delivery' },
       { src: IMAGES.h5, alt: 'Full service architecture team at work' },
     ],

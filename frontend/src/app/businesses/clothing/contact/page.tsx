@@ -5,7 +5,7 @@ export default function ClothingContactPage() {
     <>
       <section
         className="mc-page-hero"
-        style={{ backgroundImage: "url('/images/Hero-1.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-clothing.jpg')" }}
       >
         <div className="mc-hero-overlay" />
         <div className="mc-page-hero-content">

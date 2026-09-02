@@ -9,7 +9,7 @@ export default function StudiosPrivacyPage() {
         eyebrow="Legal"
         title="Privacy Policy"
         subtitle="How Minim Global Services collects, uses, and protects your information."
-        image="/images/Hero-6.jpg"
+        image="/images/minim-studio.jpg"
       />
       <section className="legal-page">
         <div className="ms-container">

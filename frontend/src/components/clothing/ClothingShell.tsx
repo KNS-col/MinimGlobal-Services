@@ -50,14 +50,14 @@ export default function ClothingShell({ children }: { children: React.ReactNode 
         <div className="mc-nav-top">
           <div className="mc-container mc-nav-top-inner">
             <a href="tel:033883388">033 88 33 88</a>
-            <a href="mailto:info@minimglobal.com">wardrobe@minimglobal.com</a>
+            <a href="mailto:info@minimglobal.com">info@minimglobal.com</a>
           </div>
         </div>
         <div className="mc-nav-inner">
           <a href={href('/')} className="mc-nav-logo" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/images/logo.png"
-              alt="Minim Clothing"
+              src="/images/Logo.png"
+              alt="Minim Clothings"
               width={140}
               height={40}
               className="object-contain"
@@ -132,7 +132,7 @@ export default function ClothingShell({ children }: { children: React.ReactNode 
         </div>
         <div className="mc-footer-bottom">
           <div className="mc-container footer-bottom-row">
-            <p>&copy; {new Date().getFullYear()} Minim Clothing. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Minim Clothings. All rights reserved.</p>
             <div className="legal-links">
               <a href={href('/privacy')}>Privacy Policy</a>
               <a href={href('/terms')}>Terms of Service</a>

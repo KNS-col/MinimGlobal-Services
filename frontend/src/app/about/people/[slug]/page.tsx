@@ -35,7 +35,7 @@ export default function PersonProfilePage({ params }: ProfilePageProps) {
       <div className="ahs">
         <section
           className="ahs-bio-hero"
-          style={{ backgroundImage: "url('/images/Hero-4.jpg')" }}
+          style={{ backgroundImage: "url('/images/minimglobal-hero.jpg')" }}
           aria-hidden="true"
         >
           <div className="ahs-bio-hero-overlay" />

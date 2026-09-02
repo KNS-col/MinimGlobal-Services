@@ -3,7 +3,7 @@ import { Building2, Users, FileText, MessageSquare, ImageIcon, DollarSign } from
 
 export default function AdminDashboard() {
   const stats = [
-    { label: 'Services', value: '4', icon: Building2, color: 'bg-blue-500' },
+    { label: 'Services', value: '5', icon: Building2, color: 'bg-blue-500' },
     { label: 'Team Members', value: '10', icon: Users, color: 'bg-green-500' },
     { label: 'Blog Posts', value: '6', icon: FileText, color: 'bg-purple-500' },
     { label: 'Contact Messages', value: '12', icon: MessageSquare, color: 'bg-orange-500' },

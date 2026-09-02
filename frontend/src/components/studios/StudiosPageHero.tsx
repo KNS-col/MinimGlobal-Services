@@ -3,6 +3,7 @@ type Props = {
   title: string
   subtitle?: string
   image?: string
+  imagePosition?: string
   ctaHref?: string
   ctaLabel?: string
   secondaryHref?: string
@@ -13,14 +14,18 @@ export default function StudiosPageHero({
   eyebrow,
   title,
   subtitle,
-  image = '/images/Hero-1.jpg',
+  image = '/images/minim-studio.jpg',
+  imagePosition = 'center',
   ctaHref = '/businesses/studios/contact',
   ctaLabel = 'Get in Touch',
   secondaryHref,
   secondaryLabel,
 }: Props) {
   return (
-    <section className="ms-page-hero" style={{ backgroundImage: `url('${image}')` }}>
+    <section
+      className="ms-page-hero"
+      style={{ backgroundImage: `url('${image}')`, backgroundPosition: imagePosition }}
+    >
       <div className="ms-hero-overlay" />
       <div className="ms-page-hero-content">
         {eyebrow && <p className="ms-eyebrow">{eyebrow}</p>}

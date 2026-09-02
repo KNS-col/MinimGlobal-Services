@@ -19,34 +19,32 @@ export default function Footer() {
         <div>
           <Link href="/" className="inline-block mb-4">
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Minim Global"
               width={180}
               height={50}
               className="object-contain"
             />
           </Link>
-          <p className="dh-footer-copy">
-            Minim Global Services is a leading company dedicated to providing
-            top quality services across various industries.
-          </p>
+          <p className="dh-footer-copy">Professionalism in Everything We Do.</p>
           <div className="dh-footer-social">
-            <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@minim_studios" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
               <TikTokIcon size={18} />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <a href="https://www.facebook.com/share/1PUGMhUyWw/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
               <FacebookIcon size={18} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <a href="https://www.instagram.com/studiosminim/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
               <InstagramIcon size={18} />
             </a>
           </div>
         </div>
 
-        <div>
+        <div className="dh-footer-quicklinks">
           <h4 className="dh-footer-heading">Quick Links</h4>
           <ul className="dh-footer-links">
             <li><Link href="/">Home</Link></li>
+            <li><Link href="/services">Services</Link></li>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/businesses">Our Businesses</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
@@ -78,6 +76,7 @@ export default function Footer() {
           </p>
           <form onSubmit={handleSubscribe} className="dh-footer-form">
             <input
+              name="newsletterEmail"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}

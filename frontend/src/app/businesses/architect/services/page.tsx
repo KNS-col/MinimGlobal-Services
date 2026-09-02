@@ -9,7 +9,7 @@ export default function ArchitectServicesIndexPage() {
         eyebrow="Full Service Practice"
         title="Architectural Services"
         subtitle="Explore each phase of our integrated design and construction process."
-        image="/images/Hero-1.jpg"
+        image="/images/minin-architect.jpg"
       />
 
       <div className="ma-container ma-service-layout">

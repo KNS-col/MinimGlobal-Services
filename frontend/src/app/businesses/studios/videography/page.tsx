@@ -54,47 +54,47 @@ const videoTypes = [
   {
     title: 'Brand Launch Film',
     type: 'Broadcast Commercial',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Website Banner Video',
     type: 'Web & Digital',
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Grand Opening Video',
     type: 'Event Film',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Product Demo',
     type: 'Product Film',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Branding Video',
     type: 'Brand Story',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Gala Appeal Video',
     type: 'Fundraising',
-    image: '/images/Hero-6.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Community Promo',
     type: 'Location Film',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Social Campaign Cut',
     type: 'Social Media',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Corporate Story',
     type: 'Brand Documentary',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-studio.jpg',
   },
 ]
 
@@ -105,7 +105,7 @@ export default function VideographyPage() {
         eyebrow="Videography Studio"
         title="Commercial Videography"
         subtitle="Full service video production from concept to delivery."
-        image="/images/Hero-6.jpg"
+        image="/images/minim-sound3.jpeg"
         ctaHref="/businesses/studios/contact"
         ctaLabel="Get in Touch"
       />
@@ -206,9 +206,6 @@ export default function VideographyPage() {
             style={{ justifyContent: 'center', marginTop: 24 }}
           >
             <a href="/businesses/studios/contact" className="ms-btn ms-btn-primary">
-              Get in Touch
-            </a>
-            <a href="/businesses/studios/contact" className="ms-btn ms-btn-ghost">
               Get in Touch
             </a>
           </div>

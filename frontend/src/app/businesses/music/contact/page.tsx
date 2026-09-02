@@ -31,7 +31,7 @@ export default function MusicContactPage() {
         eyebrow="Contact"
         title="Let's get to work"
         subtitle="Book a performance, enquire about management, or ask about instrument sales and rental."
-        image="/images/Hero-3.jpg"
+        image="/images/minim-music.jpg"
         ctaHref="tel:033883388"
         ctaLabel="Call 033 88 33 88"
       />
@@ -64,6 +64,7 @@ export default function MusicContactPage() {
             <label>
               Full Name
               <input
+                name="name"
                 required
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -72,6 +73,7 @@ export default function MusicContactPage() {
             <label>
               Email
               <input
+                name="email"
                 type="email"
                 required
                 value={form.email}
@@ -81,6 +83,7 @@ export default function MusicContactPage() {
             <label>
               Phone
               <input
+                name="phone"
                 required
                 value={form.phone}
                 onChange={(e) => setForm({ ...form, phone: e.target.value })}
@@ -89,6 +92,7 @@ export default function MusicContactPage() {
             <label>
               Interest
               <select
+                name="interest"
                 value={form.interest}
                 onChange={(e) => setForm({ ...form, interest: e.target.value })}
               >
@@ -102,6 +106,7 @@ export default function MusicContactPage() {
             <label>
               Message
               <textarea
+                name="message"
                 rows={5}
                 required
                 value={form.message}

@@ -13,7 +13,7 @@ export default function MusicPageHero({
   eyebrow,
   title,
   subtitle,
-  image = '/images/Hero-2.jpeg',
+  image = '/images/minim-music.jpg',
   ctaHref = '/businesses/music/contact',
   ctaLabel = 'Start your journey',
   secondaryHref,

@@ -99,22 +99,22 @@ const samples = [
   {
     title: 'Brand Campaign Shoot',
     category: 'Campaigns',
-    image: '/images/Hero-1.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Product Catalog Session',
     category: 'Product',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Corporate Event Coverage',
     category: 'Events',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-studio.jpg',
   },
   {
     title: 'Hospitality Spaces',
     category: 'Architecture',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minim-studio.jpg',
   },
 ]
 
@@ -125,7 +125,7 @@ export default function PhotographyPage() {
         eyebrow="Photography"
         title="Professional Imagery To Grow Your Company"
         subtitle="Commercial photography for brands, products, events, and spaces delivered on time."
-        image="/images/Hero-1.jpg"
+        image="/images/minim-sound4.jpeg"
         ctaHref="/businesses/studios/contact"
         ctaLabel="Get in Touch"
         secondaryHref="#services"
@@ -184,7 +184,7 @@ export default function PhotographyPage() {
           <article className="ms-photo-split-card">
             <div
               className="ms-photo-split-media"
-              style={{ backgroundImage: "url('/images/Hero-5.jpg')" }}
+              style={{ backgroundImage: "url('/images/minim-studio.jpg')" }}
             />
             <div className="ms-photo-split-body">
               <div className="ms-photo-split-icon">
@@ -214,7 +214,7 @@ export default function PhotographyPage() {
           <article className="ms-photo-split-card is-reverse">
             <div
               className="ms-photo-split-media"
-              style={{ backgroundImage: "url('/images/Hero-6.jpg')" }}
+              style={{ backgroundImage: "url('/images/minim-studio.jpg')" }}
             />
             <div className="ms-photo-split-body">
               <div className="ms-photo-split-icon">
@@ -273,7 +273,7 @@ export default function PhotographyPage() {
         <div className="ms-container ms-headshots-grid">
           <div
             className="ms-headshots-media"
-            style={{ backgroundImage: "url('/images/Hero-2.jpeg')" }}
+            style={{ backgroundImage: "url('/images/minim-studio.jpg')" }}
           />
           <div className="ms-headshots-copy">
             <p className="ms-eyebrow dark">Our services</p>

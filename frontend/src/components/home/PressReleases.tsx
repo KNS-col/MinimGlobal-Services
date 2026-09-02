@@ -8,38 +8,38 @@ const pressReleases = [
   {
     id: 1,
     title: 'Minim Global Services Launches New Construction Project in Freetown',
-    date: 'January 15, 2026',
+    date: 'August 12, 2026',
     excerpt:
-      'Minim Architect advances community infrastructure with a new construction initiative supporting local jobs and skills.',
-    image: '/images/Hero-4.jpg',
-    link: '/businesses',
+      'Minim Architects, Designers & Engineers advances community infrastructure with a new construction initiative supporting local jobs and skills.',
+    image: '/images/minimservice-lunches.jpg',
+    link: '/businesses/architect',
   },
   {
     id: 2,
     title: 'Minim Studios Partners with Local Artists for Cultural Festival',
-    date: 'January 10, 2026',
+    date: 'July 18, 2026',
     excerpt:
       'Creative collaboration strengthens Sierra Leone’s cultural calendar through media production and live storytelling.',
-    image: '/images/Hero-1.jpg',
-    link: '/businesses',
+    image: '/images/Minim-Culturepartnership.jpg',
+    link: '/businesses/studios',
   },
   {
     id: 3,
-    title: 'Minim Food Expands Catering Services to Corporate Events',
-    date: 'January 5, 2026',
+    title: 'Minim Foods Expands Catering Services to Corporate Events',
+    date: 'June 22, 2026',
     excerpt:
       'Quality catering grows to serve corporate clients while creating employment across the food services division.',
-    image: '/images/Hero-3.jpg',
-    link: '/businesses',
+    image: '/images/Minimfood-news.jpg',
+    link: '/businesses/food',
   },
   {
     id: 4,
-    title: 'Minim Clothing Unveils New Corporate Wear Collection',
-    date: 'December 20, 2026',
+    title: 'Minim Clothings Unveils New Corporate Wear Collection',
+    date: 'May 30, 2026',
     excerpt:
       'Local apparel design meets workplace needs with durable, contemporary corporate and family clothing lines.',
-    image: '/images/Hero-5.jpg',
-    link: '/businesses',
+    image: '/images/minim-clothingnews.jpg',
+    link: '/businesses/clothing',
   },
 ]
 

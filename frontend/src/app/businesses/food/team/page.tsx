@@ -24,7 +24,7 @@ export default function FoodTeamPage() {
     <>
       <section
         className="mf-page-hero"
-        style={{ backgroundImage: "url('/images/Hero-3.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-food.jpg')" }}
       >
         <div className="mf-hero-overlay" />
         <div className="mf-page-hero-content">

@@ -7,9 +7,10 @@ export default function AdminServices() {
 
   const services = [
     { id: 1, name: 'Minim Studios', description: 'Media production services', status: 'Active' },
-    { id: 2, name: 'Minim Food', description: 'Catering and restaurant services', status: 'Active' },
-    { id: 3, name: 'Minim Architect', description: 'Construction and design services', status: 'Active' },
-    { id: 4, name: 'Minim Clothing', description: 'Fashion and apparel services', status: 'Active' },
+    { id: 2, name: 'Minim Foods', description: 'Catering and restaurant services', status: 'Active' },
+    { id: 3, name: 'Minim Architects, Designers & Engineers', description: 'Construction and design services', status: 'Active' },
+    { id: 4, name: 'Minim Clothings', description: 'Fashion and apparel services', status: 'Active' },
+    { id: 5, name: 'Minim Music', description: 'Live performances, artist management, and instruments', status: 'Active' },
   ]
 
   const filteredServices = services.filter(service =>

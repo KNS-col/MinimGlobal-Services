@@ -8,7 +8,7 @@ export default function MusicServicesPage() {
         eyebrow="What we do"
         title="Services that open doors for artists and stages"
         subtitle="Live jazz, artist management, full performances, and an instrument outlet with rental."
-        image="/images/Hero-1.jpg"
+        image="/images/minim-music.jpg"
         ctaHref="/businesses/music/contact"
         ctaLabel="Book a consultation"
         secondaryHref="/businesses/music/artists"

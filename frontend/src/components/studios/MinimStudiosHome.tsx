@@ -53,7 +53,7 @@ export default function MinimStudiosHome() {
     <>
       <section
         className="ms-hero"
-        style={{ backgroundImage: "url('/images/Hero-1.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-studio.jpg')" }}
       >
         <div className="ms-hero-overlay" />
         <div className="ms-hero-content">

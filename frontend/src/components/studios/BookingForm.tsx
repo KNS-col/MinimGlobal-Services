@@ -33,11 +33,6 @@ export default function BookingForm({ service }: BookingFormProps) {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="section-title">Book Our Services</h2>
-          <p className="section-subtitle">Send us an inquiry and we'll get back to you</p>
-        </div>
-
         <form onSubmit={handleSubmit} className="card p-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <div>
@@ -45,6 +40,7 @@ export default function BookingForm({ service }: BookingFormProps) {
                 Full Name *
               </label>
               <input
+                name="name"
                 type="text"
                 required
                 value={formData.name}
@@ -58,6 +54,7 @@ export default function BookingForm({ service }: BookingFormProps) {
                 Email *
               </label>
               <input
+                name="email"
                 type="email"
                 required
                 value={formData.email}
@@ -74,6 +71,7 @@ export default function BookingForm({ service }: BookingFormProps) {
                 Phone Number *
               </label>
               <input
+                name="phone"
                 type="tel"
                 required
                 value={formData.phone}
@@ -87,6 +85,7 @@ export default function BookingForm({ service }: BookingFormProps) {
                 Preferred Date
               </label>
               <input
+                name="date"
                 type="date"
                 value={formData.date}
                 onChange={(e) => setFormData({ ...formData, date: e.target.value })}
@@ -100,6 +99,7 @@ export default function BookingForm({ service }: BookingFormProps) {
               Service Type *
             </label>
             <select
+              name="serviceType"
               required
               value={formData.serviceType}
               onChange={(e) => setFormData({ ...formData, serviceType: e.target.value })}
@@ -119,6 +119,7 @@ export default function BookingForm({ service }: BookingFormProps) {
               Additional Details
             </label>
             <textarea
+              name="message"
               rows={4}
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}

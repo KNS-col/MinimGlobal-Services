@@ -35,7 +35,7 @@ export default function MinimMusicHome() {
     <>
       <section
         className="mm-hero"
-        style={{ backgroundImage: "url('/images/Hero-2.jpeg')" }}
+        style={{ backgroundImage: "url('/images/minim-music.jpg')" }}
       >
         <div className="mm-hero-overlay" />
         <div className="mm-hero-content">
@@ -78,7 +78,7 @@ export default function MinimMusicHome() {
           </div>
           <div
             className="mm-intro-photo"
-            style={{ backgroundImage: "url('/images/Hero-6.jpg')" }}
+            style={{ backgroundImage: "url('/images/minim-music.jpg')" }}
             role="img"
             aria-label="Live music performance"
           />

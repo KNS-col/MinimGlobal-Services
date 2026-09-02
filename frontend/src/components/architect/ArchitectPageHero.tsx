@@ -3,6 +3,7 @@ type Props = {
   title: string
   subtitle?: string
   image?: string
+  imagePosition?: string
   ctaHref?: string
   ctaLabel?: string
 }
@@ -11,12 +12,16 @@ export default function ArchitectPageHero({
   eyebrow,
   title,
   subtitle,
-  image = '/images/Hero-4.jpg',
+  image = '/images/minin-architect.jpg',
+  imagePosition = 'center',
   ctaHref = '/businesses/architect/contact',
   ctaLabel = 'Request a Consultation',
 }: Props) {
   return (
-    <section className="ma-page-hero" style={{ backgroundImage: `url('${image}')` }}>
+    <section
+      className="ma-page-hero"
+      style={{ backgroundImage: `url('${image}')`, backgroundPosition: imagePosition }}
+    >
       <div className="ma-hero-overlay" />
       <div className="ma-page-hero-content">
         {eyebrow && <p className="ma-eyebrow">{eyebrow}</p>}

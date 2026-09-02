@@ -17,6 +17,7 @@ export default function ArchitectConsultForm() {
       <label>
         Name
         <input
+          name="name"
           required
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -25,6 +26,7 @@ export default function ArchitectConsultForm() {
       <label>
         Email
         <input
+          name="email"
           type="email"
           required
           value={form.email}
@@ -34,6 +36,7 @@ export default function ArchitectConsultForm() {
       <label>
         Message
         <textarea
+          name="message"
           rows={4}
           required
           value={form.message}

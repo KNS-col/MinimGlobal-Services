@@ -8,7 +8,7 @@ export default function StudiosTeamPage() {
         eyebrow="Our team"
         title="The People Behind Minim Studios"
         subtitle="Photographers, filmmakers, sound engineers, lighting techs, and designers the staff who bring every project to life."
-        image="/images/Hero-3.jpg"
+        image="/images/minim-studio.jpg"
         ctaHref="/businesses/studios/contact"
         ctaLabel="Work With Us"
       />
@@ -31,7 +31,7 @@ export default function StudiosTeamPage() {
                 <div className="ms-team-photo" aria-hidden={!person.image}>
                   {person.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={person.image} alt={person.name} />
+                    <img src={person.image} alt={person.name} loading="lazy" />
                   ) : (
                     <span className="ms-team-initials">{person.initials}</span>
                   )}

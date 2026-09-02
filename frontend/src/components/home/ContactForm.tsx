@@ -15,17 +15,34 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
     subject: '',
     message: '',
   })
+  const [submitting, setSubmitting] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    toast.success('Message sent successfully!')
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      subject: '',
-      message: '',
-    })
+    setSubmitting(true)
+    try {
+      const apiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001'
+      const res = await fetch(`${apiUrl}/contact`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      })
+
+      if (!res.ok) throw new Error('Request failed')
+
+      toast.success('Message sent successfully!')
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        subject: '',
+        message: '',
+      })
+    } catch {
+      toast.error('We could not send your message. Please try again.')
+    } finally {
+      setSubmitting(false)
+    }
   }
 
   const form = (
@@ -41,7 +58,6 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
             onChange={(e) =>
               setFormData({ ...formData, firstName: e.target.value })
             }
-            placeholder="John"
           />
         </div>
         <div className="dp-field">
@@ -54,7 +70,6 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
             onChange={(e) =>
               setFormData({ ...formData, lastName: e.target.value })
             }
-            placeholder="Doe"
           />
         </div>
       </div>
@@ -67,7 +82,6 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
           required
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-          placeholder="john@example.com"
         />
       </div>
 
@@ -82,12 +96,13 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
           }
         >
           <option value="">Select a subject</option>
-          <option value="Mini Studio">Mini Studio</option>
-          <option value="Mini Clothing">Mini Clothing</option>
-          <option value="Mini Architect & Design">
-            Mini Architect &amp; Design
+          <option value="Minim Studios">Minim Studios</option>
+          <option value="Minim Foods">Minim Foods</option>
+          <option value="Minim Architects, Designers & Engineers">
+            Minim Architects, Designers &amp; Engineers
           </option>
-          <option value="Mini Food">Mini Food</option>
+          <option value="Minim Clothings">Minim Clothings</option>
+          <option value="Minim Music">Minim Music</option>
           <option value="Others">Others</option>
         </select>
       </div>
@@ -106,8 +121,10 @@ export default function ContactForm({ embedded = false }: ContactFormProps) {
         />
       </div>
 
-      <button type="submit" className="ahs-btn dp-form-submit">
-        <span className="ahs-btn-text">Send Message</span>
+      <button type="submit" className="ahs-btn dp-form-submit" disabled={submitting}>
+        <span className="ahs-btn-text">
+          {submitting ? 'Sending…' : 'Send Message'}
+        </span>
       </button>
     </form>
   )

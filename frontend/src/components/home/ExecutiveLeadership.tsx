@@ -11,7 +11,7 @@ export default function ExecutiveLeadership() {
     <div className="ahs">
       <section
         className="ahs-hero"
-        style={{ backgroundImage: "url('/images/Hero-4.jpg')" }}
+        style={{ backgroundImage: "url('/images/minimglobal-hero.jpg')" }}
       >
         <div className="ahs-hero-overlay" />
         <div className="ahs-hero-inner">
@@ -45,7 +45,7 @@ export default function ExecutiveLeadership() {
                 <div className="ahs-team-photo">
                   {leader.image ? (
                     // eslint-disable-next-line @next/next/no-img-element
-                    <img src={leader.image} alt={leader.name} />
+                    <img src={leader.image} alt={leader.name} loading="lazy" />
                   ) : (
                     <div className="ahs-team-photo-fallback" aria-hidden="true">
                       {leader.initials}

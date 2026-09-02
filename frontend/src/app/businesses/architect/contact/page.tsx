@@ -6,9 +6,9 @@ export default function ArchitectContactPage() {
     <>
       <ArchitectPageHero
         eyebrow="Get in Touch"
-        title="Contact Minim Architect"
+        title="Contact Minim Architects, Designers & Engineers"
         subtitle="Discuss your project, property evaluation, or renovation goals with our team."
-        image="/images/Hero-2.jpeg"
+        image="/images/minin-architect.jpg"
         ctaHref="tel:033883388"
         ctaLabel="Call 033 88 33 88"
       />

@@ -5,7 +5,7 @@ export default function MinimClothingHome() {
     <>
       <section
         className="mc-hero"
-        style={{ backgroundImage: "url('/images/Hero-4.jpg')" }}
+        style={{ backgroundImage: "url('/images/minim-clothing.jpg')" }}
       >
         <div className="mc-hero-overlay" />
         <div className="mc-hero-content">
@@ -59,19 +59,19 @@ export default function MinimClothingHome() {
         <div className="mc-container mc-story-grid">
           <div
             className="mc-story-image"
-            style={{ backgroundImage: "url('/images/Hero-5.jpg')" }}
+            style={{ backgroundImage: "url('/images/minim-clothing.jpg')" }}
             role="img"
-            aria-label="Minim Clothing tailoring workshop"
+            aria-label="Minim Clothings tailoring workshop"
           />
           <div>
-            <p className="mc-label dark">The Minim Clothing Story</p>
+            <p className="mc-label dark">The Minim Clothings Story</p>
             <h2>
               Built for Teams.
               <br />
               Made for Families.
             </h2>
             <p>
-              Minim Clothing serves wholesalers, schools, workplaces, and families
+              Minim Clothings serves wholesalers, schools, workplaces, and families
               across Sierra Leone. Contact us for bulk stock, uniforms, special
               occasion wear, and matching family outfits.
             </p>

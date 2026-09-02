@@ -47,7 +47,7 @@ export default function DesignStudioPage() {
         eyebrow="Design Studio"
         title="Design That Builds Brands"
         subtitle="Identity, campaigns, packaging, and digital design concept through final artwork."
-        image="/images/Hero-5.jpg"
+        image="/images/minim-studio.jpg"
       />
 
       <section className="ms-intro">

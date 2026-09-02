@@ -31,7 +31,7 @@ const stats = [
   },
   {
     icon: Layers,
-    title: 'Industries: Studios, Food, Architect, Clothing.',
+    title: 'Industries: Studios, Food, Architect, Clothing, Music.',
   },
 ]
 
@@ -39,51 +39,55 @@ const fancyBoxes = [
   {
     title: 'Our vision',
     icon: RefreshCw,
-    image: '/images/Hero-1.jpg',
+    image: '/images/minimglobal-hero.jpg',
     description:
-      'To be the leading provider of exceptional services, fostering technological advancement and business growth worldwide.',
+      'To become a trusted and recognized global brand known for professionalism, creativity, quality, and excellence across architecture, design, media, food, and clothing.',
   },
   {
     title: 'Our Mission',
     icon: Target,
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minimglobal-hero.jpg',
     description:
-      'To empower businesses with innovative solutions that enhance efficiency, connectivity, and sustainability.',
+      'To provide innovative, reliable, and high-quality services that exceed expectations while building lasting relationships with our clients and creating positive value in every community we serve.',
   },
   {
     title: 'Our commitment',
     icon: PenLine,
-    image: '/images/Hero-3.jpg',
+    image: '/images/minimglobal-hero.jpg',
     description:
-      'Minim Global Services is a leading company dedicated to providing top quality services across various industries. Our mission is to innovate and drive growth for businesses through strategic solutions.',
+      'We hold every division to the same standard: dependable delivery, fair dealing, and work that stands up to scrutiny. Commitment to our communities shows up in the jobs we create and the skills we build.',
   },
 ]
 
 const milestones = [
   {
     title: '2018 Minim Studios is founded',
-    image: null as string | null,
+    image: '/images/minim-studio.jpg',
   },
   {
-    title: '2020 Launch of Minim Food catering services',
-    image: null as string | null,
+    title: '2020 Launch of Minim Foods catering services',
+    image: '/images/minim-food.jpg',
   },
   {
-    title: '2022 Expansion into Minim Architect',
-    image: '/images/Hero-4.jpg',
+    title: '2022 Expansion into Minim Architects, Designers & Engineers',
+    image: '/images/minin-architect.jpg',
   },
   {
-    title: '2024 Addition of Minim Clothing apparel',
-    image: '/images/Hero-5.jpg',
+    title: '2024 Addition of Minim Clothings apparel',
+    image: '/images/minim-clothing.jpg',
+  },
+  {
+    title: '2025 Launch of Minim Music',
+    image: '/images/minim-music.jpg',
   },
 ]
 
 const coreValues = [
+  'Professionalism',
+  'Creativity',
+  'Quality',
   'Integrity',
-  'Innovation',
-  'Excellence',
-  'Sustainability',
-  'Community Empowerment',
+  'Customer Satisfaction',
 ]
 
 export default function HistoryVisionMission() {
@@ -103,16 +107,16 @@ export default function HistoryVisionMission() {
       {/* Hero */}
       <section
         className="ahs-hero"
-        style={{ backgroundImage: "url('/images/Hero-6.jpg')" }}
+        style={{ backgroundImage: "url('/images/minimglobal-hero.jpg')" }}
       >
         <div className="ahs-hero-overlay" />
         <div className="ahs-hero-inner">
           <p className="ahs-hero-eyebrow">Who We Are</p>
           <h1 className="ahs-hero-title">About Minim Global Services</h1>
           <p className="ahs-hero-sub">
-            Minim Global Services is a leading company dedicated to providing
-            top quality services across various industries. Our mission is to
-            innovate and drive growth for businesses through strategic solutions.
+            From a single media studio in Freetown to a five-industry group,
+            Minim Global Services builds ventures that meet everyday needs and
+            create lasting opportunity across Sierra Leone.
           </p>
         </div>
       </section>
@@ -123,9 +127,12 @@ export default function HistoryVisionMission() {
           <div className="ahs-history-copy">
             <h2 className="ahs-heading">History and Strategy</h2>
             <p className="ahs-body">
-              Minim Global Services is a leading company dedicated to providing
-              top quality services across various industries. Our mission is to
-              innovate and drive growth for businesses through strategic solutions.
+              What began in 2018 as a single media production studio has grown
+              into a diversified group spanning food service, architecture,
+              apparel, and music. Our strategy is deliberate: enter industries
+              where quality and reliability are scarce, build local capacity
+              from the ground up, and reinvest in the people and communities
+              we serve.
             </p>
             <Link href="/businesses" className="ahs-btn">
               <span className="ahs-btn-text">Learn About Our Businesses</span>
@@ -194,8 +201,9 @@ export default function HistoryVisionMission() {
               </div>
               <h3 className="ahs-icon-box-title">Vision Statement</h3>
               <p className="ahs-icon-box-desc">
-                To be the leading provider of exceptional services, fostering
-                technological advancement and business growth worldwide.
+                To become a trusted and recognized global brand known for
+                professionalism, creativity, quality, and excellence across
+                architecture, design, media, food, and clothing.
               </p>
             </div>
             <div className="ahs-icon-box">
@@ -204,8 +212,10 @@ export default function HistoryVisionMission() {
               </div>
               <h3 className="ahs-icon-box-title">Mission Statement</h3>
               <p className="ahs-icon-box-desc">
-                To empower businesses with innovative solutions that enhance
-                efficiency, connectivity, and sustainability.
+                To provide innovative, reliable, and high-quality services
+                that exceed expectations while building lasting relationships
+                with our clients and creating positive value in every
+                community we serve.
               </p>
             </div>
             <div className="ahs-icon-box">
@@ -233,9 +243,9 @@ export default function HistoryVisionMission() {
             The Minim story began with a vision to transform Sierra Leone’s
             business landscape through media production. Over the years, we have
             grown into a diversified group spanning studios, food, architecture,
-            and clothing. Each milestone reflects our commitment to industrial
-            growth, self-reliance, and improving quality of life for communities
-            we serve.
+            clothing, and music. Each milestone reflects our commitment to
+            industrial growth, self-reliance, and improving quality of life for
+            communities we serve.
           </p>
           <p className="ahs-body ahs-body-space">
             Today, Minim Global stands as a symbol of resilience and
@@ -253,7 +263,7 @@ export default function HistoryVisionMission() {
                 <div className="ahs-timeline-card">
                   {item.image && (
                     <div className="ahs-timeline-image">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} alt="" loading="lazy" width={140} height={90} />
                     </div>
                   )}
                   <div className="ahs-timeline-text">

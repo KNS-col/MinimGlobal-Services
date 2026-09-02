@@ -9,7 +9,7 @@ export default function ArchitectPrivacyPage() {
         eyebrow="Legal"
         title="Privacy Policy"
         subtitle="How Minim Global Services collects, uses, and protects your information."
-        image="/images/Hero-6.jpg"
+        image="/images/minin-architect.jpg"
       />
       <section className="legal-page">
         <div className="ma-container">

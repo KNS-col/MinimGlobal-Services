@@ -12,7 +12,7 @@ export default function TermsPage() {
         eyebrow="Legal"
         title="Terms of Service"
         subtitle="The terms that govern your use of the Minim Global Services website."
-        image="/images/Hero-6.jpg"
+        image="/images/minimglobal-hero.jpg"
       />
       <section className="legal-page">
         <div className="ahs-container">

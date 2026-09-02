@@ -18,24 +18,25 @@ const businesses: Array<{
     slug: 'studios',
     title: 'Minim Studios',
     meta: 'Media / Production / Events',
-    description: 'Explore our professional studio services',
-    image: '/images/Hero-1.jpg',
+    description:
+      'Photography, videography, live streaming, and creative production that amplify brands and community stories.',
+    image: '/images/minim-studio.jpg',
     details: [
       'Photography',
       'Videography',
       'Audio Production',
       'Event Planning',
       'Advertisement',
-      'Live Jazz Band',
+      'Live Streaming',
     ],
   },
   {
     slug: 'food',
-    title: 'Minim Food',
+    title: 'Minim Foods',
     meta: 'Catering / Hospitality',
     description:
       'Catering, restaurant operations, and food service solutions delivering quality and reliability for everyday and special occasions.',
-    image: '/images/Hero-3.jpg',
+    image: '/images/minim-food.jpg',
     details: [
       'Restaurant Operations',
       'Catering Services',
@@ -47,11 +48,11 @@ const businesses: Array<{
   },
   {
     slug: 'architect',
-    title: 'Minim Architect Designers & Engineers',
+    title: 'Minim Architects, Designers & Engineers',
     meta: 'Construction / Design',
     description:
       'Explore our architectural services and discover how we can bring your vision to life.',
-    image: '/images/Hero-4.jpg',
+    image: '/images/minin-architect.jpg',
     details: [
       'Residential Design',
       'Construction',
@@ -63,11 +64,11 @@ const businesses: Array<{
   },
   {
     slug: 'clothing',
-    title: 'Minim Clothing',
+    title: 'Minim Clothings',
     meta: 'Fashion / Apparel',
     description:
       'Fashion design, family clothing, corporate wear, and custom apparel solutions.',
-    image: '/images/Hero-5.jpg',
+    image: '/images/minim-clothing.jpg',
     details: [
       'Family',
       'Batch',
@@ -82,7 +83,7 @@ const businesses: Array<{
     meta: 'Live / Artists / Instruments',
     description:
       'Live jazz and stage performances, artist management, and a musical instrument outlet with rental.',
-    image: '/images/Hero-2.jpeg',
+    image: '/images/minim-music.jpg',
     details: [
       'Live Jazz Performances',
       'Artist Management',

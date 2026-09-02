@@ -35,11 +35,11 @@ export default function ContactPageContent() {
     <div className="ahs">
       <section className="ahs-team-intro">
         <div className="ahs-container ahs-team-intro-inner">
-          <h2 className="ahs-heading">We&apos;d love to hear from you!</h2>
+          <h2 className="ahs-heading">Contact Our Team</h2>
           <p className="ahs-team-intro-desc">
-            Whether you have questions about our services, want to collaborate,
-            or simply need more information, our team at Minim Global Services
-            is here to assist you.
+            Our team is available to answer questions about our services,
+            discuss partnership opportunities, or provide information about
+            any of our divisions.
           </p>
           <span className="ahs-underline" aria-hidden="true">
             <span />
@@ -67,9 +67,9 @@ export default function ContactPageContent() {
             <div>
               <h2 className="ahs-heading">Visit Us</h2>
               <p className="ahs-body" style={{ marginBottom: 24 }}>
-                Feel free to reach out to us using the details below or by
-                filling out the contact form. Our office is conveniently
-                located, and we invite you to visit us during working hours.
+                Use the details below or the form to contact us directly.
+                Our office in Freetown welcomes visitors during working
+                hours.
               </p>
               <div className="dp-contact-info">
                 <div>
@@ -98,13 +98,13 @@ export default function ContactPageContent() {
               <div className="dp-contact-social">
                 <h4>Follow Us</h4>
                 <div>
-                  <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <a href="https://www.tiktok.com/@minim_studios" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
                     <TikTokIcon size={16} />
                   </a>
-                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <a href="https://www.facebook.com/share/1PUGMhUyWw/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                     <FacebookIcon size={16} />
                   </a>
-                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <a href="https://www.instagram.com/studiosminim/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                     <InstagramIcon size={16} />
                   </a>
                 </div>

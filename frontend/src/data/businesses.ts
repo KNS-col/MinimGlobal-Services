@@ -11,6 +11,8 @@ export type Business = {
   name: string
   path: string
   navLinks: BusinessNavLink[]
+  /** Flip to true once a division's subdomain/site is ready for public traffic. */
+  live: boolean
 }
 
 /** DNS: point studios/food/architect/clothing/music (or *) at the same host as the apex site. */
@@ -20,6 +22,7 @@ export const businesses: Business[] = [
     subdomain: 'studios',
     name: 'Minim Studios',
     path: '/businesses/studios',
+    live: false,
     navLinks: [
       { href: '/photography', label: 'Photography' },
       { href: '/videography', label: 'Videography' },
@@ -33,8 +36,9 @@ export const businesses: Business[] = [
   {
     slug: 'food',
     subdomain: 'food',
-    name: 'Minim Food',
+    name: 'Minim Foods',
     path: '/businesses/food',
+    live: false,
     navLinks: [
       { href: '/', label: 'Home' },
       { href: '/catering', label: 'Catering' },
@@ -45,8 +49,9 @@ export const businesses: Business[] = [
   {
     slug: 'architect',
     subdomain: 'architect',
-    name: 'Minim Architect',
+    name: 'Minim Architects, Designers & Engineers',
     path: '/businesses/architect',
+    live: false,
     navLinks: [
       { href: '/', label: 'Home' },
       { href: '/portfolio', label: 'Portfolio' },
@@ -58,8 +63,9 @@ export const businesses: Business[] = [
   {
     slug: 'clothing',
     subdomain: 'clothing',
-    name: 'Minim Clothing',
+    name: 'Minim Clothings',
     path: '/businesses/clothing',
+    live: false,
     navLinks: [
       { href: '/', label: 'Home' },
       { href: '/services', label: 'Services' },
@@ -72,6 +78,7 @@ export const businesses: Business[] = [
     subdomain: 'music',
     name: 'Minim Music',
     path: '/businesses/music',
+    live: false,
     navLinks: [
       { href: '/', label: 'Home' },
       { href: '/services', label: 'Services' },
@@ -214,6 +221,12 @@ function buildOrigin(subOrHost: string, port?: string): string {
 export function getBusinessPublicUrl(slug: BusinessSlug, requestPort?: string): string {
   const biz = getBusinessBySlug(slug)
   if (!biz) return `/businesses/${slug}`
+
+  // Division site isn't ready for public traffic yet — send visitors to an
+  // in-app "under development" page instead of a dead subdomain or WIP content.
+  if (!biz.live) {
+    return `/coming-soon?business=${slug}`
+  }
 
   if (typeof window !== 'undefined') {
     if (!shouldUseSubdomainPublicUrls(window.location.hostname)) {

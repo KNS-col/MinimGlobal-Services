@@ -9,7 +9,7 @@ export default function MusicPrivacyPage() {
         eyebrow="Legal"
         title="Privacy Policy"
         subtitle="How Minim Global Services collects, uses, and protects your information."
-        image="/images/Hero-6.jpg"
+        image="/images/minim-music.jpg"
       />
       <section className="legal-page">
         <div className="mm-container">

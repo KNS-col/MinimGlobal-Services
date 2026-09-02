@@ -62,7 +62,7 @@ export default function MusicShell({ children }: { children: React.ReactNode }) 
         <div className="mm-nav-inner">
           <a href={href('/')} className="mm-nav-logo" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Minim Music"
               width={140}
               height={40}

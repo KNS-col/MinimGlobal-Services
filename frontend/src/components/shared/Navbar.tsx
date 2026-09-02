@@ -3,12 +3,28 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Menu, X, ChevronDown } from 'lucide-react'
+import {
+  Menu,
+  X,
+  ChevronDown,
+  ChevronRight,
+  ArrowUpRight,
+  Camera,
+  UtensilsCrossed,
+  Building2,
+  Shirt,
+  Music,
+  BookOpen,
+  Users,
+  type LucideIcon,
+} from 'lucide-react'
 import { getBusinessPublicUrl, type BusinessSlug } from '@/data/businesses'
 
 type NavSubLink = {
   href: string
   label: string
+  description: string
+  icon: LucideIcon
   slug?: BusinessSlug
 }
 
@@ -49,31 +65,72 @@ export default function Navbar() {
   }, [])
 
   const businessSubLinks: NavSubLink[] = [
-    { href: '/businesses/studios', label: 'Minim Studios', slug: 'studios' },
-    { href: '/businesses/food', label: 'Minim Food', slug: 'food' },
-    { href: '/businesses/architect', label: 'Minim Architect', slug: 'architect' },
-    { href: '/businesses/clothing', label: 'Minim Clothing', slug: 'clothing' },
-    { href: '/businesses/music', label: 'Minim Music', slug: 'music' },
+    {
+      href: '/businesses/studios',
+      label: 'Minim Studios',
+      description: 'Media, production & events',
+      icon: Camera,
+      slug: 'studios',
+    },
+    {
+      href: '/businesses/food',
+      label: 'Minim Foods',
+      description: 'Catering & hospitality',
+      icon: UtensilsCrossed,
+      slug: 'food',
+    },
+    {
+      href: '/businesses/architect',
+      label: 'Minim Architects, Designers & Engineers',
+      description: 'Architecture & construction',
+      icon: Building2,
+      slug: 'architect',
+    },
+    {
+      href: '/businesses/clothing',
+      label: 'Minim Clothings',
+      description: 'Fashion & apparel',
+      icon: Shirt,
+      slug: 'clothing',
+    },
+    {
+      href: '/businesses/music',
+      label: 'Minim Music',
+      description: 'Live music & entertainment',
+      icon: Music,
+      slug: 'music',
+    },
   ]
 
   const aboutSubLinks: NavSubLink[] = [
-    { href: '/about/history', label: 'History, Mission & Vision' },
-    { href: '/about/leadership', label: 'Executive Leadership' },
+    {
+      href: '/about/history',
+      label: 'History, Mission & Vision',
+      description: 'Our story and direction',
+      icon: BookOpen,
+    },
+    {
+      href: '/about/leadership',
+      label: 'Executive Leadership',
+      description: 'Meet our leaders',
+      icon: Users,
+    },
   ]
 
   const navLinks: NavLinkItem[] = [
     { href: '/', label: 'Home' },
-    {
-      href: '/businesses',
-      label: 'Our Businesses',
-      dropdownKey: 'businesses',
-      subLinks: businessSubLinks,
-    },
+    { href: '/services', label: 'Services' },
     {
       href: '/about',
       label: 'About Us',
       dropdownKey: 'about',
       subLinks: aboutSubLinks,
+    },
+    {
+      href: '/businesses',
+      label: 'Our Businesses',
+      dropdownKey: 'businesses',
+      subLinks: businessSubLinks,
     },
     { href: '/contact', label: 'Contact' },
   ]
@@ -98,10 +155,10 @@ export default function Navbar() {
       <div className="dh-nav-inner">
         <Link href="/" className="dh-nav-logo" onClick={closeMobileMenu}>
           <Image
-            src="/images/logo.png"
+            src="/images/Logo.png"
             alt="Minim Global"
-            width={140}
-            height={40}
+            width={130}
+            height={37}
             className="object-contain dh-nav-logo-img"
             priority
           />
@@ -116,30 +173,53 @@ export default function Navbar() {
               </Link>
               {link.subLinks && (
                 <div className="dh-nav-dropdown">
-                  {link.subLinks.map((subLink) => {
-                    const href = subLink.slug
-                      ? getBusinessPublicUrl(subLink.slug)
-                      : subLink.href
+                  <p className="dh-nav-dropdown-heading">
+                    {link.dropdownKey === 'businesses' ? 'Our Divisions' : 'About Minim Global'}
+                  </p>
+                  <div className="dh-nav-dropdown-list">
+                    {link.subLinks.map((subLink) => {
+                      const href = subLink.slug
+                        ? getBusinessPublicUrl(subLink.slug)
+                        : subLink.href
+                      const Icon = subLink.icon
 
-                    if (subLink.slug) {
-                      return (
-                        <a
-                          key={subLink.href}
-                          href={href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {subLink.label}
-                        </a>
+                      const content = (
+                        <>
+                          <span className="dh-nav-dropdown-icon">
+                            <Icon size={17} strokeWidth={1.75} />
+                          </span>
+                          <span className="dh-nav-dropdown-text">
+                            <span className="dh-nav-dropdown-label">{subLink.label}</span>
+                            <span className="dh-nav-dropdown-desc">{subLink.description}</span>
+                          </span>
+                          {subLink.slug ? (
+                            <ArrowUpRight size={14} className="dh-nav-dropdown-caret" />
+                          ) : (
+                            <ChevronRight size={14} className="dh-nav-dropdown-caret" />
+                          )}
+                        </>
                       )
-                    }
 
-                    return (
-                      <Link key={subLink.href} href={subLink.href}>
-                        {subLink.label}
-                      </Link>
-                    )
-                  })}
+                      if (subLink.slug) {
+                        return (
+                          <a
+                            key={subLink.href}
+                            href={href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {content}
+                          </a>
+                        )
+                      }
+
+                      return (
+                        <Link key={subLink.href} href={subLink.href}>
+                          {content}
+                        </Link>
+                      )
+                    })}
+                  </div>
                 </div>
               )}
             </div>

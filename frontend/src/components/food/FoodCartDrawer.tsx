@@ -132,6 +132,7 @@ export default function FoodCartDrawer() {
                 <label>
                   Full Name
                   <input
+                    name="name"
                     required
                     value={form.name}
                     onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -140,6 +141,7 @@ export default function FoodCartDrawer() {
                 <label>
                   Email
                   <input
+                    name="email"
                     type="email"
                     required
                     value={form.email}
@@ -149,6 +151,7 @@ export default function FoodCartDrawer() {
                 <label>
                   Phone
                   <input
+                    name="phone"
                     required
                     value={form.phone}
                     onChange={(e) => setForm({ ...form, phone: e.target.value })}
@@ -157,6 +160,7 @@ export default function FoodCartDrawer() {
                 <label>
                   Delivery address
                   <input
+                    name="address"
                     required
                     value={form.address}
                     onChange={(e) => setForm({ ...form, address: e.target.value })}
@@ -165,6 +169,7 @@ export default function FoodCartDrawer() {
                 <label>
                   Notes
                   <textarea
+                    name="notes"
                     rows={2}
                     placeholder="Delivery notes, preferred time…"
                     value={form.notes}

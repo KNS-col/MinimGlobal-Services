@@ -14,7 +14,7 @@ export default function MusicInstrumentsPage() {
         eyebrow="Outlet & rental"
         title="Musical instruments for stages, schools, and studios"
         subtitle="Buy or rent guitars, keys, drums, brass, and PA packages with practical advice from our team."
-        image="/images/Hero-5.jpg"
+        image="/images/minim-music.jpg"
         ctaHref="/businesses/music/contact"
         ctaLabel="Enquire about gear"
         secondaryHref="/businesses/music/services/instruments"

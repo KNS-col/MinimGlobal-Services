@@ -32,12 +32,12 @@ export type MusicTestimonial = {
 }
 
 const IMAGES = {
-  h1: '/images/Hero-1.jpg',
-  h2: '/images/Hero-2.jpeg',
-  h3: '/images/Hero-3.jpg',
-  h4: '/images/Hero-4.jpg',
-  h5: '/images/Hero-5.jpg',
-  h6: '/images/Hero-6.jpg',
+  h1: '/images/minim-music.jpg',
+  h2: '/images/minim-music.jpg',
+  h3: '/images/minim-music.jpg',
+  h4: '/images/minim-music.jpg',
+  h5: '/images/minim-music.jpg',
+  h6: '/images/minim-music.jpg',
 } as const
 
 export const MUSIC_LEAD =

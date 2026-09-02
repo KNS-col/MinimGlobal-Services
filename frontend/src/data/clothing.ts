@@ -19,12 +19,12 @@ export type ClothingService = {
 }
 
 const IMAGES = {
-  h1: '/images/Hero-1.jpg',
-  h2: '/images/Hero-2.jpeg',
-  h3: '/images/Hero-3.jpg',
-  h4: '/images/Hero-4.jpg',
-  h5: '/images/Hero-5.jpg',
-  h6: '/images/Hero-6.jpg',
+  h1: '/images/minim-clothing.jpg',
+  h2: '/images/minim-clothing.jpg',
+  h3: '/images/minim-clothing.jpg',
+  h4: '/images/minim-clothing.jpg',
+  h5: '/images/minim-clothing.jpg',
+  h6: '/images/minim-clothing.jpg',
 } as const
 
 export const CLOTHING_PROMO =
@@ -37,7 +37,7 @@ export const CLOTHING_SERVICES: ClothingService[] = [
     summary:
       'Bulk pricing for retailers, NGOs, schools, and corporate buyers across Sierra Leone.',
     description:
-      'Minim Clothing supplies wholesale apparel for shops, institutions, and organisations. Tell us your quantities, branding needs, and delivery timeline and we will prepare a quote for cartons, packs, and custom-labelled stock.',
+      'Minim Clothings supplies wholesale apparel for shops, institutions, and organisations. Tell us your quantities, branding needs, and delivery timeline and we will prepare a quote for cartons, packs, and custom-labelled stock.',
     image: IMAGES.h3,
   },
   {

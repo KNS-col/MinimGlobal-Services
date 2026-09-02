@@ -53,7 +53,7 @@ export default function StudiosShell({ children }: { children: React.ReactNode }
         <div className="ms-nav-inner">
           <a href={href('/')} className="ms-nav-logo" onClick={() => setMenuOpen(false)}>
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Minim Studios"
               width={140}
               height={40}
@@ -143,7 +143,7 @@ export default function StudiosShell({ children }: { children: React.ReactNode }
         <div className="ms-container ms-footer-grid">
           <div>
             <Image
-              src="/images/logo.png"
+              src="/images/Logo.png"
               alt="Minim Studios"
               width={160}
               height={44}
